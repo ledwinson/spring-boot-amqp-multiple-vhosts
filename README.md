@@ -35,3 +35,20 @@ The following guides illustrate how to use some features concretely:
 
 * [Messaging with RabbitMQ](https://spring.io/guides/gs/messaging-rabbitmq/)
 
+#### Output after running project
+```
+Sending Message to secondvhost count = 1
+2020-06-18 10:46:56.661  INFO 21971 --- [           main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: localhost:5672
+2020-06-18 10:46:56.699  INFO 21971 --- [           main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: secondConnectionFactory#100f9bbe:0/SimpleConnection@522ba524 [delegate=amqp://guest@127.0.0.1:5672/secondvhost, localPort= 57953]
+Sending Message to firstvhost count = 2
+2020-06-18 10:46:56.779  INFO 21971 --- [           main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: localhost:5672
+2020-06-18 10:46:56.793  INFO 21971 --- [           main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: firstConnectionFactory#367795c7:0/SimpleConnection@22bd2039 [delegate=amqp://guest@127.0.0.1:5672/firstvhost, localPort= 57954]
+Sending Message to secondvhost count = 3
+Sending Message to firstvhost count = 4
+Sending Message to secondvhost count = 5
+Sending Message to firstvhost count = 6
+Sending Message to secondvhost count = 7
+Sending Message to firstvhost count = 8
+Sending Message to secondvhost count = 9
+Sending Message to firstvhost count = 10
+```
