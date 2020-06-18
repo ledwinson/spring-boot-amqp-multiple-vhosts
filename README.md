@@ -22,20 +22,13 @@ curl -u guest:guest -X PUT http://localhost:15672/api/vhosts/secondvhost
 * Once you run the app you can see following vhots and queues
 * also you will be able to see messages in the queues.
 
-firstvhost	
-mytest.deadletter.routing.queue
-D	idle	0	0	0			
-firstvhost	
-mytest.routing.queue
-D DLX DLK Args	idle	5	0	5	0.00/s		
 
-secondvhost	
-mytest.deadletter.routing.queue
-D	idle	0	0	0			
-secondvhost	
-mytest.routing.queue
-D DLX DLK Args	idle	5	0	5	0.00/s		
-
+| vhost         |   exchanges   |  Queues | Routig key |
+| ------------- | ------------- | -------------| -------------|
+| firstvhost  | mytest.exchange  | |mytest.routing.queue|mytest.routing.key|
+| firstvhost | mytest.deadletter.exchange  | mytest.deadletter.routing.queue|mytest.deadletter.routing.key|
+| secondvhost  | mytest.exchange  | |mytest.routing.queue|mytest.routing.key|
+| secondvhost | mytest.deadletter.exchange | mytest.deadletter.routing.queue|	mytest.deadletter.routing.key|
 
 
 The following guides illustrate how to use some features concretely:
