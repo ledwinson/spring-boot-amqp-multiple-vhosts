@@ -25,9 +25,9 @@ curl -u guest:guest -X PUT http://localhost:15672/api/vhosts/secondvhost
 
 | vhost         |   exchanges   |  Queues | Routig key |
 | ------------- | ------------- | -------------| -------------|
-| firstvhost  | mytest.exchange  | |mytest.routing.queue|mytest.routing.key|
+| firstvhost  | mytest.exchange  |mytest.routing.queue|mytest.routing.key|
 | firstvhost | mytest.deadletter.exchange  | mytest.deadletter.routing.queue|mytest.deadletter.routing.key|
-| secondvhost  | mytest.exchange  | |mytest.routing.queue|mytest.routing.key|
+| secondvhost  | mytest.exchange  |mytest.routing.queue|mytest.routing.key|
 | secondvhost | mytest.deadletter.exchange | mytest.deadletter.routing.queue|	mytest.deadletter.routing.key|
 
 
