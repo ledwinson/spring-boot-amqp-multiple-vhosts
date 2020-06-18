@@ -3,6 +3,7 @@
 ### Steps
 #### First of all you need to create the virtual hosts manually
 curl -u guest:guest -X PUT http://localhost:15672/api/vhosts/firstvhost
+
 curl -u guest:guest -X PUT http://localhost:15672/api/vhosts/secondvhost
 
 #### Now follow these steps
