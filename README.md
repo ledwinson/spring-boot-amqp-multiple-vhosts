@@ -1,4 +1,4 @@
-# Creating a spring boot project to send messages to multiple vhosts
+# Creating a spring boot project to send messages to multiple vhosts - rabbitmq
 
 ### Steps
 #### First of all you need to create the virtual hosts manually
